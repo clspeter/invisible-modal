@@ -50,7 +50,7 @@ const RootStack = createNativeStackNavigator({
     ScreenC: {
       screen: ScreenC,
       options: {
-        title: "ScreenB",
+        title: "ScreenC",
       },
     },
     NotFound: {
