@@ -5,7 +5,7 @@ import { Pressable, StyleSheet, ToastAndroid, View } from "react-native";
 
 export const ScreenTM = () => {
   const showToast = (text: string) => {
-    ToastAndroid.show(text, ToastAndroid.SHORT);
+    ToastAndroid.show(text, 500);
   };
   const navigation = useNavigation();
 
@@ -19,8 +19,8 @@ export const ScreenTM = () => {
       <Text style={{ fontSize: 24 }}>ModalPage</Text>
       <Pressable
         onPress={() => {
-          console.log("Back Pressed");
-          showToast("Back Pressed");
+          console.log("Modal Press To Back Pressed");
+          showToast("Modal Press To Back Pressed");
           navigation.goBack();
         }}
         style={styles.backButton}
